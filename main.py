@@ -9,13 +9,12 @@ from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
-#from dotenv import load_dotenv
 from pathlib import Path
 import os
 
 # IMPORT VARIABLES ENV
-dotenv_path = Path('config/variabiles.env')
-load_dotenv(dotenv_path=dotenv_path)
+# dotenv_path = Path('config/variabiles.env')
+# load_dotenv(dotenv_path=dotenv_path)
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6bGURU"
