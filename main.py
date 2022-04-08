@@ -9,7 +9,7 @@ from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from pathlib import Path
 import os
 
